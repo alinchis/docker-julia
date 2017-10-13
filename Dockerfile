@@ -20,5 +20,5 @@ RUN /usr/local/julia/bin/julia -e 'Pkg.add("WebSockets")'
 ENV JULIA_VER v0.5
 ENV JULIA_PKG_DIR /root/.julia/${JULIA_VER}
 
-# add symlinks to escher and julia
+# add symlinks to julia
 RUN ln -fs /usr/local/julia/bin/julia /usr/bin/julia
